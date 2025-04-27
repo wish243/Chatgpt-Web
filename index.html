@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>사진 공유 페이지</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .hero {
+      background-color: #343a40;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .scrolling-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      overflow-x: auto;
+    }
+
+    .card {
+      min-width: 300px;
+      max-width: 300px;
+      height: 450px; /* 카드 높이 고정 */
+      flex-shrink: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .card-title, .card-subtitle, .card-text {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1 class="display-4">"khw 사진공유 페이지"</h1>
+    <p class="lead">다양한 사진을 공유합니다</p>
+  </div>
+
+  <!-- Card Section -->
+  <div class="container my-5">
+    <div class="scrolling-wrapper">
+      <!-- 카드 1 -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg"
+          class="card-img-top" alt="호수 풍경">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">청명한 호수의 아침</h5>
+            <h6 class="card-subtitle mb-2 text-muted">자연 속 힐링</h6>
+            <p class="card-text">맑고 평온한 호수 위로 퍼지는 아침 햇살을 담았습니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 카드 2 -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg"
+          class="card-img-top" alt="산 풍경">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">구름 위의 산봉우리</h5>
+            <h6 class="card-subtitle mb-2 text-muted">모험 여행</h6>
+            <p class="card-text">구름을 뚫고 솟아오른 웅장한 산의 위용을 보여주는 사진입니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 카드 3  -->
+<div class="card">
+    <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg"
+      class="card-img-top" alt="푸른 해변 풍경">
+    <div class="card-body">
+      <div>
+        <h5 class="card-title">푸른 바다와 맑은 하늘</h5>
+        <h6 class="card-subtitle mb-2 text-muted">완벽한 힐링</h6>
+        <p class="card-text">끝없이 펼쳐진 푸른 바다와 청명한 하늘이 어우러진 아름다운 해변 풍경입니다.</p>
+      </div>
+    </div>
+</div>
+
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>
